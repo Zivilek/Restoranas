@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Restoranas</title>
+    <link href="restoranas.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#aprasymas">Apie</a></li>
+            <li><a href="#pagrindinisMeniu">Pagrindinis meniu</a></li>
+            <li><a href="#pusryciuMeniu">Pusryčių meniu</a></li>
+            <li><a href="#desertuMeniu">Desertų meniu</a></li>
+            <li><a href="#klientai">Klientai</a></li>
+            <li><a href="#rezervacija">Rezervacija</a></li>
+          </ul>
+    </nav>
+    <section> 
+        <header>
+            <br><label>Iveskite elemento numeri</label>
+            <input id="deleteNr" type="text"/><br>
+            <h1 id="aprasymas">Restorano meniu</h1>
+            <input id="colorbutton" type="button" value="Spalvink"/><br>
+            <p>Mūsų restoranas siūlo platų patiekalų pasirinkimą, 
+            kiekvieno patiekalo paskaičiuotas kilokalorijų skaičius, nustatyta
+            mitybos rūšis ir visa tai pateikta specialai Jums, kad kiekvienas
+            iš Jūsų galėtų pasirinkti patiekalus pagal savo gyvenimo būdą. </p>
+        </header>
+        <article>
+            <h2 id="pagrindinisMeniu">Pagrindinis meniu</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Pavadinimas</th>
+                        <th rowspan="2">Kaina</th>
+                        <th colspan="2">Apibūdinimas</th>
+                    </tr>
+                    <tr>
+                        <th>Kalorijos</th>
+                        <th>Mityba</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pica</td>
+                        <td>7.39</td>
+                        <td>956</td>
+                        <td>Įprasta</td>
+                    </tr>
+                    <tr>
+                        <td>Makaronai su tunu</td>
+                        <td>6.60</td>
+                        <td>728</td>
+                        <td>Vegetariška</td>
+                    </tr>
+                    <tr>
+                        <td>Bolivinės balandos salotos</td>
+                        <td>6.95</td>
+                        <td>856</td>
+                        <td>Veganiška</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+                <h2 id="pusryciuMeniu">Pusryčių meniu</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Pavadinimas</th>
+                            <th rowspan="2">Kaina</th>
+                            <th colspan="2">Apibūdinimas</th>
+                        </tr>
+                        <tr>
+                            <th>Kalorijos</th>
+                            <th>Mityba</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Blynai su varške</td>
+                            <td>4.32</td>
+                            <td>456</td>
+                            <td>Vegetariška</td>
+                        </tr>
+                        <tr>
+                            <td>Omletas</td>
+                            <td>4.25</td>
+                            <td>483</td>
+                            <td>Vegetariška</td>
+                        </tr>
+                        <tr>
+                            <td>Avižinė košė su migdolų pienu</td>
+                            <td>4.68</td>
+                            <td>356</td>
+                            <td>Veganiška</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                    <h2 id="desertuMeniu">Desertų meniu</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Pavadinimas</th>
+                                <th rowspan="2">Kaina</th>
+                                <th colspan="2">Apibūdinimas</th>
+                            </tr>
+                            <tr>
+                                <th>Kalorijos</th>
+                                <th>Mityba</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Obuolių pyragas</td>
+                                <td>3.89</td>
+                                <td>564</td>
+                                <td>Vegetariška</td>
+                            </tr>
+                            <tr>
+                                <td>Kokosų pyragas</td>
+                                <td>4.21</td>
+                                <td>483</td>
+                                <td>Veganiška</td>
+                            </tr>
+                            <tr>
+                                <td>Ledai su šokolado užpilu</td>
+                                <td>2.98</td>
+                                <td>428</td>
+                                <td>Vegetariška</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h2 id="rezervacijos">Rezervacijos</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vardas</th>
+                                <th>Pavardė</th>
+                                <th>El. Paštas</th>
+                                <th>Data</th>
+                                <th>Žmonių skaičius</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rezerTable">
+                            <tr>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h3 id="klientai">Štai taip atrodo laimingi mūsų restorano klientai</h3>
+                    <input id="addText" type="text"/><br>
+                        <img id="pic" src="http://38.media.tumblr.com/49f3992ed94d90935ba3a53a54208680/tumblr_ngcv8fl13T1solqzko1_500.gif" 
+                        alt="Įvyko klaida. Nėra galimybės atvaizduoti paveiksliuko" />
+                </article>
+    </section>
+    <section >
+        <form id="rezervacija">        
+            <header>
+            <h1>Staliuko rezervacija</h1>
+            </header>
+            <label>Vardas</label><input id="name" name="name"class="clientInfo" type="text"/><br>
+            <label>Pavardė</label><input class="clientInfo" name="surname" type="text"/><br>
+            <label>El.Paštas</label>
+            <input class="clientInfo" name="email" type="email"/><br>
+            <label>Atvykimo data</label>
+            <input id="resDate" name="date" type="text" placeholder="yyyy-MM-dd"/><br>
+            <label>Kiek žmonių atvyks?</label>
+            <input name="zmoniuKiekis" id="ppl" class="clientInfo" type="Int"/><br>
+            <label>Pažymėdamas patvirtinu, kad sutinku su restorano 
+                rezervacijos <a href="https://www.gordonramsayrestaurants.com/terms-and-conditions/" target="_blank">taisyklėmis</a></label>
+            <input name="patvirtinimas" type="checkbox"/><br>
+            <input id="button" type="submit" value="Patvirtinti"/><br>
+        </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="restoranas.js"></script>
+</body>
+</html>
